@@ -26,7 +26,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="App">
       <h1>Team Builder</h1>
       <NoteForm addNewNote={addNewNote} />
       <Notes notes={notes} />
