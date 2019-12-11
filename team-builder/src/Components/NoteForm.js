@@ -3,9 +3,9 @@ import React, { useState } from "react";
 const NoteForm = ({ addNewNote }) => {
   const [note, setNote] = useState({ id: "", title: "", body: "" });
 
-  const handleChanges = event => {
-    setNote({ ...note, [event.target.value]: event.target.value });
-  };
+  //   const handleChanges = event => {
+  //     setNote({ ...note, [event.target.value]: event.target.value });
+  //   };
 
   const submitForm = event => {
     event.preventDefault();
@@ -32,6 +32,8 @@ const NoteForm = ({ addNewNote }) => {
       <label htmlFor="role">Role</label>
 
       <input id="role" type="text" name="role" placeholder="Enter your role" />
+
+      <button type="submit">Add Team Member</button>
     </form>
   );
 };
